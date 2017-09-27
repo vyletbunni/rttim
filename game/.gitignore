@@ -21,3 +21,5 @@ user/
 astron/logs
 .idea
 valuestoremember.txt
+parsetab.py
+parsetab.pyc

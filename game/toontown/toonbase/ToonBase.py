@@ -56,8 +56,8 @@ class ToonBase(OTPBase.OTPBase):
 
         # Get the native width, height and ratio:
         if sys.platform == 'win32':  # Use displayInfo.
-            self.nativeWidth = displayInfo.getMaximumWindowWidth()
-            self.nativeHeight = displayInfo.getMaximumWindowHeight()
+            self.nativeWidth = 1280
+            self.nativeHeight = 720
         elif sys.platform == 'darwin':
             self.nativeWidth = 800
             self.nativeHeight = 600
@@ -65,8 +65,8 @@ class ToonBase(OTPBase.OTPBase):
             import gtk
             self.nativeWidth = gtk.gdk.screen_width()
             self.nativeHeight = gtk.gdk.screen_height()
-        #self.nativeRatio = round(
-        #    float(self.nativeWidth) / float(self.nativeHeight), 2)
+        self.nativeRatio = round(
+            float(self.nativeWidth) / float(self.nativeHeight), 2)
 
         # Finally, choose the best resolution if we're either fullscreen, or
         # don't have one defined in our preferences:
