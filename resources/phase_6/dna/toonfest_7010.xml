@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene zone="7010">
+	<group name="toonfest">
+		<visgroup zone="7010:safe_zone" vis="7010:safe_zone">
+
+			<group name="props">
+				<!-- Geom -->
+				<prop name="toonfest_7010_DNARoot" code="toonfest_ccc_exterior">
+					<pos x="0" y="0" z="0" />
+					<nhpr h="0" p="0" r="0" />
+				</prop>
+			</group>
+			<node name="buildings">
+				<prop name="linktunnel_ff_7000_DNARoot" code="prop_outdoor_zone_entrance">
+					<pos x=" -83.9" y="-303.4" z="18.3" />
+					<nhpr h="82.5" p="0" r="0" />
+					<sign code="DD_sign2">
+						<pos x="0" y="0" z="0" />
+						<nhpr h="0" p="0" r="-3.0" />
+						<scale x="1.85" y="1" z="1.35" />
+						<baseline code="TT_Comedy" wiggle="3" stomp="0.0367716">
+							<color r="0.439216" g="0.247059" b="0.184314" a="1" />
+							<scale x="1.5" y="1" z="1.4" />
+							<text>ToonFest</text>
+						</baseline>
+						<baseline code="TT_Comedy" wiggle="3" stomp="0.0367716">
+							<color r="0.439216" g="0.247059" b="0.184314" a="1" />
+							<pos x="0" y="0" z="-1.2" />
+							<scale x="1.2" y="0.7" z="1.1" />
+							<text>Event Grounds</text>
+						</baseline>
+					</sign>
+				</prop>
+			</node>
+
+		</visgroup>
+	</group>
+</scene>

@@ -1,0 +1,1208 @@
+group "toonfest" [
+ visgroup "11800" [
+  vis [   "11800"   ]
+  
+  // Ground
+  prop "toonfest_DNARoot" [
+   code [ "tf_grounds_1" ]
+   pos [ 0 0 0 ]
+   nhpr [ 0 0 0 ]
+  ]
+  
+  // Tunnel
+  prop "linktunnel_oz_6000_DNARoot" [
+   code [ "prop_outdoor_zone_entrance" ]
+   pos [ -83.9 -303.4 18.3 ]
+   nhpr [ 82.5 0 0 ]
+  ]
+  
+  // ToonFest Tower
+  prop "toonfest_tower_DNARoot" [
+   code [ "tf_tower" ]
+   pos [ 221 -61 4.5 ]
+   nhpr [ -30 0 0 ]
+  ]
+  
+  // Booth
+  prop "toonfest_piebooth_DNARoot" [
+   code [ "tf_booth" ]
+   pos [ 113 -330 8.35 ]
+   nhpr [ 220 0 0 ]
+  ]
+  
+  // Duck Tank
+  //prop "toonfest_ducktank_DNARoot" [
+  // code [ "tf_ducktank" ]
+  // pos [ 177 -282 7.0 ]
+  // nhpr [ 260 0 -5 ]
+  //]  
+  
+  // XP Booth
+  prop "toonfest_xpbooth_DNARoot" [
+   code [ "tf_booth" ]
+   pos [ 360 -115 9.63 ]
+   nhpr [ 285 0 0 ]
+  ]  
+  
+  // Prize NPCS (Inside toonfest tower)
+  group "npcs" [
+      prop "npc_prizeclerk_origin_1" [
+        code [ "DCS" ]
+        pos [ 109 -329 8.35 ]
+        nhpr [ 60 0 0 ]
+    ]   
+  
+      prop "npc_prizeclerk_origin_2" [
+       code [ "DCS" ]
+       pos [ 113 -326 8.35 ]
+       nhpr [ 20 0 0 ]
+      ] 
+	  
+      prop "npc_prizeclerk_origin_3" [
+       code [ "DCS" ]
+       pos [ 357 -112 9.63 ]
+       nhpr [ 90 0 0 ]
+      ] 
+	  
+      prop "npc_prizeclerk_origin_4" [
+       code [ "DCS" ]
+       pos [ 357 -112 9.63 ]
+       nhpr [ 130 0 0 ]
+      ] 
+    ]
+	
+	
+	// Fisherman NPC
+    prop "npc_fisherman_origin_0" [
+      code [ "DCS" ]
+      pos [ 311 -509 0.9 ]
+      nhpr [ 100 0 0 ]
+	]	
+	// Fishing Spot #1
+    prop "fishing_spot_DNARoot" [
+     code [ "fishing_spot" ]
+     pos [ 239 -551 0.9 ]
+     nhpr [ 0 0 0 ]
+    ] 
+	  
+	// Fishing Spot #2
+    prop "fishing_spot_DNARoot" [
+     code [ "fishing_spot" ]
+     pos [ 262 -543 0.9 ]
+     nhpr [ 40 0 0 ]
+    ]
+
+	// Fishing Spot #3	  
+    prop "fishing_spot_DNARoot" [
+     code [ "fishing_spot" ]
+     pos [ 275 -524 0.9 ]
+     nhpr [ 75 0 0 ]
+    ]
+	  
+	// Fishing Spot #4 
+    prop "fishing_spot_DNARoot" [
+     code [ "fishing_spot" ]
+     pos [ 273 -503 0.9 ]
+     nhpr [ 120 0 0 ]
+    ]
+	  
+    // Fishing Spot #5	  
+    prop "fishing_spot_DNARoot" [
+     code [ "fishing_spot" ]
+     pos [ 260 -494 0.9 ]
+     nhpr [ 170 0 0 ]
+    ]
+	  
+	// Fishing Spot #6  
+    prop "fishing_spot_DNARoot" [
+     code [ "fishing_spot" ]
+     pos [ 245 -493 0.9 ]
+     nhpr [ 170 0 0 ]
+    ]        		
+
+  // Game Tables
+  node "game_table_1" [
+   prop "prop_game_table_DNARoot" [
+    code [ "prop_game_table" ]
+    pos [ 71 -135 12.85 ]
+    nhpr [ 114 4 -4 ]
+   ]
+  ]
+
+  node "game_table_2" [
+   prop "prop_game_table_DNARoot" [
+    code [ "prop_game_table" ]
+    pos [ 109 32 6.7 ]
+    nhpr [ -121 -8.5 0 ]
+   ]
+  ]
+
+  node "game_table_3" [
+   prop "prop_game_table_DNARoot" [
+    code [ "prop_game_table" ]
+    pos [ 321 18 8.2 ]
+    nhpr [ -231 -3 1 ]
+   ]
+  ]
+
+  node "game_table_4" [
+   prop "prop_game_table_DNARoot" [
+    code [ "prop_game_table" ]
+    pos [ 415 -140 9.63 ]
+    nhpr [ 105 0 0 ]
+   ]
+  ]
+
+  node "game_table_5" [
+   prop "prop_game_table_DNARoot" [
+    code [ "prop_game_table" ]
+    pos [ 326 -514 0.93 ]
+    nhpr [ -260 0 0 ]
+   ]
+  ]
+
+  node "game_table_6" [
+   prop "prop_game_table_DNARoot" [
+    code [ "prop_game_table" ]
+    pos [ 100 -355 8.4 ]
+    nhpr [ 310 0 0 ]
+   ]   
+  ]
+  
+  node "picnic_table_1" [
+   prop "prop_picnic_table_DNARoot" [
+    code [ "prop_picnic_table" ]
+    pos [ 136 -332 8.35 ]
+    nhpr [ 10 0 0 ]
+   ]   
+  ]
+  
+  node "picnic_table_2" [
+   prop "prop_picnic_table_DNARoot" [
+    code [ "prop_picnic_table" ]
+    pos [ 319 -535 1.0 ]
+    nhpr [ 20 0 0 ]
+   ]   
+  ]
+  
+  node "picnic_table_3" [
+   prop "prop_picnic_table_DNARoot" [
+    code [ "prop_picnic_table" ]
+    pos [ 66 -180 11.15 ]
+    nhpr [ -75 -1 3 ]
+   ]   
+  ]  
+  
+  // ALL OF THESE SHITTY FUCKING TREES!!!!!!!
+  
+  // First lets start off with the SMALL trees.
+  prop "tree58_DNARoot" [
+   code [ "tf_tree_s" ]
+   pos [ 261.696014 -205.537003 7.111520 ]
+   nhpr [ 16.916065 -8.930625 -4.363521 ]
+   scale [ 1.672333 1.672324 1.672332 ]
+  ]
+  
+  prop "tree1_DNARoot" [
+   code [ "tf_tree_s" ]
+   pos [ 84.966904 -110.981003 7.446310 ]
+   nhpr [ -45.000000 0.000000 -0.000000 ]
+   scale [ 1.395509 1.395509 1.395510 ]
+  ]
+  
+  prop "tree40_DNARoot" [
+   code [ "tf_tree_s" ]
+   pos [ 99.798401 78.408501 13.158400 ]
+   nhpr [ 44.870831 4.450197 2.210776 ]
+   scale [ 0.750000 0.750000 0.750000 ]
+  ]
+  
+  // Medium Trees
+  prop "tree70_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [ 351.622986   -418.990997   27.260300 ]
+   nhpr [ 3.480341   -8.650455   -8.315225 ]
+   scale [ 1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree71_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [ 391.272003   -374.976990   27.188601 ]
+   nhpr [ 81.689972   -10.848373   6.669793 ]
+   scale [ 1.250005   1.249999   1.249998 ]
+  ]
+  
+  prop "tree72_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [ 422.890991   -311.589996   27.280701 ]
+   nhpr [ 26.972383   -2.549255   -4.953341 ]
+   scale [ 1.000000   1.000000   1.250001 ]
+  ]
+  
+  prop "tree73_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [465.411987   -282.684998   32.582901]
+   nhpr [-30.026985   -3.596591   6.186738]
+   scale [0.750000   0.750001   1.000000]
+  ]
+  
+  prop "tree74_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [ 474.479004   -336.144989   24.806999  ]
+   nhpr [ -30.026985   -3.596591   6.186738 ]
+   scale [ 0.750000   0.750001   1.000000 ]
+  ]
+  
+  prop "tree74_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [474.479004   -336.144989   24.806999]
+   nhpr [8.721179   9.697498   17.072887]
+   scale [0.400000   0.400000   0.600000]
+  ]
+  
+  prop "tree75_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [479.976990   -387.819000   18.186001]
+   nhpr [-50.001755   -9.181873   15.262601]
+   scale [0.250000   0.250000   0.250000]
+  ]
+  
+  prop "tree76_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [490.570007   -360.467987   17.942101]
+   nhpr [-141.819412   -15.176371   -9.033970]
+   scale [0.250000   0.250000   0.250000]
+  ]
+  
+  prop "tree77_DNARoot" [
+   code [ "tf_tree_m" ]
+   pos [461.282013   -219.007996   29.394699]
+   nhpr [-129.909668   9.432570   4.187253]
+   scale [0.749999   0.750000   1.000000]
+  ]
+  
+  prop "tree78_DNARoot" [
+   code [ tf_tree_m ]
+   pos [424.408997   -374.955994   33.199299]
+   nhpr [-0.861618   2.093747   10.641893]
+   scale [0.750000   0.750000   0.750000]
+  ]
+  
+  prop "tree79_DNARoot" [
+   code [ tf_tree_m ]
+   pos [413.911987   -460.039001   33.859402]
+   nhpr [105.708305   18.559341   -7.093150]
+   scale [0.750000   0.750000   0.750000]
+  ]
+  
+  prop "tree80_DNARoot" [
+   code [ tf_tree_m ]
+   pos [434.865997   -525.309998   21.276899]
+   nhpr [-46.532837   -14.505884   12.167416]
+   scale [0.250000   0.250000   0.250000]
+  ]
+  
+  prop "tree81_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 404.546997   -581.218994   30.546200 ]
+   nhpr [-136.378754   -12.696177   -15.858256 ]
+   scale [0.250000   0.250000   0.250000 ]
+  ]
+  
+  prop "tree82_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 367.078003   -641.047974   38.749802 ]
+   nhpr [-136.210068   -8.306233   -2.150279 ]
+   scale [0.250001   0.250000   0.250000 ]
+  ]
+
+  prop "tree83_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 345.024994   -613.132019   43.913399 ]
+   nhpr [-34.783520   -4.471691   11.203048 ]
+   scale [0.250000   0.250000   0.250000 ]
+  ]
+
+  prop "tree84_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 279.536011   -635.731995   39.452801 ]
+   nhpr [-37.390320   9.184292   6.775064 ]
+   scale [0.400000   0.400000   0.400000 ]
+  ] 
+
+  prop "tree85_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 371.906006   -501.036987   34.267101 ]
+   nhpr [-29.144075   4.942957   -7.951554 ]
+   scale [0.750000   0.750000   1.000000 ]
+  ] 
+
+  prop "tree86_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 327.684998   -575.328979   44.551601 ]
+   nhpr [-32.991913   -13.268891   -15.579994 ]
+   scale [0.750000   0.750000   1.000000 ]
+  ]  
+  
+  prop "tree87_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 316.488007   -617.747986   43.961201 ]
+   nhpr [-0.000000   5.889784   -0.000000 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ] 
+
+  prop "tree88_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 216.352005   -655.232971   35.978901 ]
+   nhpr [-143.657867   -8.715456   6.922355 ]
+   scale [0.350000   0.350000   0.350000 ]
+  ] 
+
+  prop "tree89_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 255.537003   -610.575989   44.426899 ]
+   nhpr [145.470276   -9.351805   -4.819005 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]  
+
+  prop "tree90_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 175.365997   -617.531006   40.365299 ]
+   nhpr [40.097713   7.183809   -7.692630 ]
+   scale [0.750001   0.750000   0.750000 ]
+  ] 
+
+  prop "tree91_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 86.174797   -611.021973   33.481701 ]
+   nhpr [-36.875668   14.087872   -4.219571 ]
+   scale [0.250000   0.250000   0.250000 ]
+  ]  
+
+  prop "tree92_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 45.433102   -573.716003   31.961300 ]
+   nhpr [124.917717   -12.568492   -5.118184 ]
+   scale [0.350000   0.350000   0.350000 ]
+  ]  
+
+  prop "tree93_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 33.230598   -505.795013   45.941898 ]
+   nhpr [145.841934   -4.446313   -2.000968 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+
+  prop "tree94_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 17.171400   -441.234009   49.187801 ]
+   nhpr [-85.018120   1.066558   -0.528877 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ] 
+
+  prop "tree95_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -34.402500   -427.302002   48.155201 ]
+   nhpr [-178.425583   11.968550   3.511096 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+
+  prop "tree96_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 153.507996   -398.958008   27.566601 ]
+   nhpr [178.983658   11.193089   3.323745 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ] 
+
+  prop "tree97_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 99.717300   -391.079010   21.947800 ]
+   nhpr [-52.745514   -5.795721   -9.666697 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+
+  prop "tree98_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 53.757801   -401.510986   22.406300 ]
+   nhpr [62.263191   -1.723637   8.328566 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ] 
+
+  prop "tree99_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 32.088100   -408.447998   35.392300 ]
+   nhpr [-179.560806   8.182730   -3.082817 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ] 
+
+  prop "tree100_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 98.611000   -430.067993   36.591301 ]
+   nhpr [34.999981   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]  
+  
+  prop "tree101_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ 17.626200   -383.402008   28.520500 ]
+   nhpr [116.403557   0.000000   -0.000000 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+  
+  prop "tree102_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -22.234699   -361.381989   28.520599 ]
+   nhpr [36.530563   -8.264493   13.247072 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree103_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -5.320080   -501.842010   44.922501 ]
+   nhpr [32.165459   8.372766   -10.758060 ]
+   scale [0.500000   0.500000   0.500000 ]
+  ]
+  
+  prop "tree104_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -63.601700   -498.549988   38.592098 ]
+   nhpr [1.959820   15.810177   -9.789606 ]
+   scale [0.350000   0.350000   0.350000 ]
+  ] 
+
+  prop "tree105_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -82.937401   -441.053986   46.757198 ]
+   nhpr [4.990979   -0.529168   -1.071481 ]
+   scale [0.500000   0.500000   0.500000 ]
+  ] 
+
+  prop "tree106_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -51.602100   -393.984985   37.113499 ]
+   nhpr [130.742615   3.611273   13.136638 ]
+   scale [0.750000   0.750001   0.750000 ]
+  ]
+
+  prop "tree107_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -89.842598   -385.536011   31.087200 ]
+   nhpr [18.046947   -2.100506   5.016660 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]    
+  
+  prop "tree108_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -78.610001   -353.990997   26.994699 ]
+   nhpr [114.795906   14.725063   7.283622 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ] 
+  
+  prop "tree109_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -135.606995   -450.420013   36.149502 ]
+   nhpr [-98.807693   7.384138   9.527033 ]
+   scale [0.500000   0.500000   0.500000 ]
+  ] 
+  
+  prop "tree110_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -154.462006   -417.306000   38.163601 ]
+   nhpr [64.038765   -5.255431   -17.815891 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+
+  prop "tree111_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -121.471001   -389.320007   42.773300 ]
+   nhpr [0.280810   -8.944401   8.232593 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+
+  prop "tree112_DNARoot" [
+   code [ tf_tree_m ]
+   pos [ -152.781006   -357.638000   43.701801 ]
+   nhpr [99.999985   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ] 
+
+  prop "tree112_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -152.781006   -357.638000   43.701801 ]
+   nhpr [99.999985   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree113_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -175.192993   -368.886993   43.952900 ]
+   nhpr [154.999985   -8.701108   5.440150 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+  
+  prop "tree114_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -176.899002   -397.213989   40.955299 ]
+   nhpr [2.435847   8.323061   -8.337071 ]
+   scale [0.350000   0.350000   0.350000 ]
+  ]
+  
+  prop "tree115_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -204.389008   -363.635986   39.347198 ]
+   nhpr [-23.663160   10.386383   -9.212621 ]
+   scale [0.500000   0.499999   0.500000 ]
+  ]
+  
+  prop "tree116_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -222.177994   -308.937012   39.288601 ]
+   nhpr [30.084295   -2.420617   -10.004584 ]
+   scale [0.750000   0.750001   0.750000 ]
+  ]
+  
+  prop "tree117_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -178.311005   -303.039001   45.862301 ]
+   nhpr [99.029510   -7.907139   -1.730487 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree118_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -180.854996   -335.424011   43.952000 ]
+   nhpr [59.042110   -10.904239   -9.610909 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree119_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -142.136993   -281.006012   34.438999 ]
+   nhpr [155.619354   -2.566070   -0.340449 ]
+   scale [1.250004   1.250003   1.249995 ]
+  ]
+  
+  prop "tree120_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -113.435997   -365.976013   34.034100 ]
+   nhpr [-155.792206   8.829426   -13.219320 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+  
+  prop "tree121_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -141.001999   -312.794006   31.322201 ]
+   nhpr [-154.921219   -1.932450   -0.757006 ]
+   scale [1.249997   1.249996   1.250000 ]
+  ]
+  
+  prop "tree122_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -277.817993   -164.311005   28.872400 ]
+   nhpr [-14.357997   5.339070   -8.764470 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+  
+  prop "tree123_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -260.686005   -203.300995   27.074301 ]
+   nhpr [105.096336   -10.297308   0.603382 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+  
+  prop "tree124_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -242.858002   -218.460007   29.690399 ]
+   nhpr [0.366097   2.052842   -4.138033 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree125_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -209.158997   -243.503998   41.173302 ]
+   nhpr [0.169020   -0.671998   -4.135645 ]
+   scale [1.250003   1.250001   1.250001 ]
+  ]
+  
+  prop "tree126_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -174.623993   -264.455994   46.048100 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.250000   1.250000   1.500000 ]
+  ]
+  
+  prop "tree127_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -164.102997   -235.578995   42.631599 ]
+   nhpr [50.000000   0.000000   -0.000000 ]
+   scale [1.250001   1.250001   1.750000 ]
+  ]
+  
+  prop "tree128_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -283.967987   -109.264000   39.722198 ]
+   nhpr [-63.823826   7.663162   0.000002 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree129_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -302.046997   -60.319302   39.258499 ]
+   nhpr [-14.560653   5.020852   -5.938203 ]
+   scale [0.750000   0.750000   0.750000 ]
+  ]
+  
+  prop "tree130_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -228.274994   -116.541000   38.524502 ]
+   nhpr [99.427559   7.542816   2.534478 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree131_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -214.822998   -81.939697   31.935801 ]
+   nhpr [-20.018745   -4.298907   10.952363 ]
+   scale [1.250000   1.249998   1.250001 ]
+  ]
+  
+  prop "tree132_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -241.744995   -18.433701   40.439201 ]
+   nhpr [44.418053   8.115925   8.503114 ]
+   scale [1.499997   1.500003   1.499996 ]
+  ]
+  
+  prop "tree134_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -152.908997   -192.138000   33.701199 ]
+   nhpr [155.154541   3.002208   0.067135 ]
+   scale [2.000001   2.000002   2.500003 ]
+  ]
+  
+  prop "tree135_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -106.737000   -203.354004   25.444700 ]
+   nhpr [155.154541   3.002208   0.067135 ]
+   scale [2.000001   2.000002   1.999996 ]
+  ]
+  
+  prop "tree136_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -94.316704   -254.709000   29.596901 ]
+   nhpr [-178.455688   -3.416779   0.000000 ]
+   scale [1.250004   1.249995   1.250002 ]
+  ]
+  
+  prop "tree137_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -127.241997   -248.063995   40.384399 ]
+   nhpr [55.784904   2.706628   -5.937489 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree138_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -128.557999   -340.471985   24.602400 ]
+   nhpr [134.953323   0.362263   -2.701203 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree139_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -62.934799   -243.483002   34.287498 ]
+   nhpr [-17.937445   7.859944   0.514168 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree140_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -44.726398   -264.731995   27.229000 ]
+   nhpr [66.334953   1.305626   -7.750177 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree141_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -4.106810   -279.757996   22.799999 ]
+   nhpr [0.393161   7.671165   -2.942749 ]
+   scale [0.800000   0.800000   0.800000 ]
+  ]
+  
+  prop "tree142_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 33.115101   -277.694000   23.447701 ]
+   nhpr [132.197571   -6.555120   -4.344249 ]
+   scale [0.999999   1.000000   1.000000 ]
+  ]
+  
+  prop "tree143_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 57.966400   -278.859009   19.290701 ]
+   nhpr [0.417833   3.155534   5.445542 ]
+   scale [0.800000   0.800000   0.800000 ]
+  ]
+  
+  prop "tree144_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 38.997799   -254.494995   21.685900 ]
+   nhpr [29.506369   1.288449   8.084792 ]
+   scale [1.250002   1.249999   1.249997 ]
+  ]
+  
+  prop "tree145_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 2.547200   -227.690994   26.238899 ]
+   nhpr [133.132950   9.122508   3.543198 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree146_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -28.164200   -229.393005   29.198000 ]
+   nhpr [132.886703   2.681313   1.292830 ]
+   scale [1.250000   1.250000   1.249996 ]
+  ]
+  
+  prop "tree147_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 11.803500   -253.636993   29.184401 ]
+   nhpr [-0.261148   2.486501   5.997516 ]
+   scale [1.000000   1.000000   1.500005 ]
+  ]
+  
+  prop "tree148_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -12.439100   -256.739990   34.272598 ]
+   nhpr [-122.617905   -1.771857   3.601395 ]
+   scale [1.000000   1.000000   1.499998 ]
+  ]
+  
+  prop "tree149_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -193.990997   -198.682007   33.834301 ]
+   nhpr [130.048019   -2.746168   3.141324 ]
+   scale [1.500002   1.500000   1.500004 ]
+  ]
+  
+  prop "tree150_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -235.630005   -169.276993   35.977001 ]
+   nhpr [-112.508560   4.053648   0.985564 ]
+   scale [1.500003   1.500003   1.500004 ]  
+  ]
+  
+  prop "tree10_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 320.634003   -392.686005   10.259500 ]
+   nhpr [24.999981   5.124101   0.000003 ]
+   scale [1.499998   1.500001   1.500005 ]
+  ]
+  
+  prop "tree11_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 300.747986   -437.173004   8.496370 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.250000   1.250000   1.250000 ]
+  ]
+  
+  prop "tree12_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 155.210007   -515.258972   0.906343 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [0.600000   0.750000   0.750000 ]
+  ]
+  
+  prop "tree13_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 155.261993   -484.610992   0.906343 ]
+   nhpr [39.999973   0.000000   -0.000000 ]
+   scale [0.800000   0.800000   0.800000 ]
+  ]
+  
+  prop "tree14_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 310.394989   -491.440002   0.906549 ]
+   nhpr [-67.000000   0.000000   -0.000000 ]
+   scale [0.860290   0.860290   0.860290 ]
+  ]
+  
+  prop "tree16_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -17.272400   -152.389999   19.599100 ]
+   nhpr [-0.000000   6.948162   -0.000000 ]
+   scale [1.400000   1.400002   1.400002 ]
+  ]
+  
+  prop "tree18_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 341.824005   -237.001999   20.903000 ]
+   nhpr [-43.333462   -10.447237   9.115399 ]
+   scale [1.000000   1.000000   1.000000 ]
+  ]
+  
+  prop "tree150_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -235.630005   -169.276993   35.977001 ]
+   nhpr [-112.508560   4.053648   0.985564 ]
+   scale [1.500003   1.500003   1.500004 ]
+   ]
+   
+  prop "tree2_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 95.088097   -215.923004   6.598060 ]
+   nhpr [-45.000000   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+   
+  prop "tree3_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 97.904999   -170.783005   6.151740 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.400000   1.400000   1.400000 ]
+   ]
+   
+  prop "tree4_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -42.546398   -46.708698   32.783699 ]
+   nhpr [121.413803   1.568864   2.018539 ]
+   scale [1.500001   1.500002   1.500003 ]
+   ]
+   
+  prop "tree5_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 118.196999   95.826103   10.976000 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.500000   1.500000   1.500000 ]
+   ]
+   
+  prop "tree6_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 153.617004   78.664101   7.008750 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+   
+  prop "tree7_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 47.339401   132.369003   19.561199 ]
+   nhpr [-105.999969   0.000000   -5.281721 ]
+   scale [1.750004   1.750002   1.750000 ]
+   ]
+   
+  prop "tree8_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 191.246002   -408.035004   2.363810 ]
+   nhpr [-45.000000   4.580521   -0.000000 ]
+   scale [1.000000   0.999999   1.250002 ]
+   ]
+   
+  prop "tree9_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 246.606995   -389.117004   8.408150 ]
+   nhpr [25.000027   2.387591   -0.000002 ]
+   scale [1.100000   1.100000   1.100005 ]
+   ]
+   
+  prop "tree20_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 324.054993   -276.753998   17.199100 ]
+   nhpr [-44.246506   3.889758   9.551560 ]
+   scale [2.000003   2.000002   2.000000 ]
+   ]
+   
+  prop "tree21_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 285.200989   -313.864990   27.701700 ]
+   nhpr [-44.897331   -0.651077   9.704217 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+   
+  prop "tree22_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 341.584015   -370.303986   10.069500 ]
+   nhpr [-44.897331   -0.651077   5.388865 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+   
+  prop "tree23_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 353.648010   37.817299   9.606790 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.500000   1.500000   1.500000 ]
+   ]
+   
+  prop "tree25_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 400.639008   -169.296997   9.606790 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [2.000000   2.000000   2.000000 ]
+   ]
+   
+  prop "tree26_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 220.246002   -283.433990   9.033740 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+   
+  prop "tree27_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 203.535995   -244.261002   4.572000 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [0.750000   0.750000   0.750000 ]
+   ]
+   
+  prop "tree28_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 179.973999   -304.407990   7.375870 ]
+   nhpr [-45.000000   0.000000   -0.000000 ]
+   scale [0.750000   0.750000   0.750000 ]
+   ]
+   
+  prop "tree29_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 231.457001   -340.703003   13.714900 ]
+   nhpr [65.000023   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+   
+  prop "tree30_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 232.345993   67.140900   4.572000 ]
+   nhpr [73.739281   0.000000   -0.000000 ]
+   scale [1.500004   1.500004   1.500000 ]
+   ]
+   
+  prop "tree31_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -20.929300   94.549103   13.143800 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.750000   1.750000   1.750000 ]
+   ]
+   
+  prop "tree32_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -75.866798   67.071701   13.240700 ]
+   nhpr [-45.000000   0.000000   -0.000000 ]
+   scale [1.500000   1.500000   1.500000 ]
+   ]
+   
+  prop "tree33_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -100.073997   -38.132900   23.323500 ]
+   nhpr [-45.000000   0.000000   -0.000000 ]
+   scale [1.500000   1.500000   1.500000 ]
+   ]
+   
+  prop "tree34_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -63.796902   -158.136993   13.655900 ]
+   nhpr [50.115040   0.425398   -2.984263 ]
+   scale [1.500003   1.500002   1.499996 ]
+   ]
+ 
+  prop "tree35_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 103.834000   -197.561005   7.327840 ]
+   nhpr [25.029821   3.909796   3.329886 ]
+   scale [0.600000   0.600000   0.600000 ]
+   ]
+ 
+  prop "tree36_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 109.266998   -148.703003   6.477020 ]
+   nhpr [44.834194   4.943775   2.605560 ]
+   scale [0.750000   0.750000   1.000000 ]
+   ]
+ 
+  prop "tree38_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 65.330803   -75.168800   15.000200 ]
+   nhpr [90.000000   6.808111   -0.000000 ]
+   scale [0.600000   0.600000   0.600000 ]
+   ]
+ 
+  prop "tree39_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 71.930298   17.526300   13.202700 ]
+   nhpr [-0.218679   3.027194   5.746482 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+ 
+  prop "tree41_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 53.064201   61.826199   19.927500 ]
+   nhpr [45.000000   5.396745   -0.000000 ]
+   scale [1.000000   0.999999   1.000000 ]
+   ]
+ 
+  prop "tree42_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 16.705099   97.899002   28.496700 ]
+   nhpr [-0.027556   1.585565   -6.177975 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+ 
+  prop "tree43_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -32.065300   45.435299   19.040701 ]
+   nhpr [-180.000000   0.000000   2.296547 ]
+   scale [0.750000   0.750000   0.750000 ]
+   ]
+ 
+  prop "tree45_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 81.776299   -264.028992   4.266910 ]
+   nhpr [-35.305500   2.192364   3.919847 ]
+   scale [0.750000   0.750001   0.750000 ]
+   ]
+ 
+  prop "tree46_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 7.451050   -183.018005   11.383800 ]
+   nhpr [24.999981   0.000000   -4.258601 ]
+   scale [1.000000   1.000000   1.500001 ]
+   ]
+ 
+  prop "tree47_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 9.395340   -118.986000   23.999300 ]
+   nhpr [-145.534805   -6.245509   -4.150913 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+ 
+  prop "tree50_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -15.031100   -61.093201   34.934898 ]
+   nhpr [65.035812   1.075368   4.487526 ]
+   scale [0.750000   0.750000   0.750000 ]
+   ]
+ 
+  prop "tree51_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ -50.286098   -18.306000   27.206499 ]
+   nhpr [-0.523407   -12.806267   -0.423769 ]
+   scale [1.249998   1.250005   1.249997 ]
+   ]
+ 
+  prop "tree52_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 35.321301   -196.235992   10.479400 ]
+   nhpr [-24.999956   4.506656   3.964687 ]
+   scale [1.400001   1.400002   1.399999 ]
+   ]
+ 
+  prop "tree55_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 199.757996   -329.148010   9.476900 ]
+   nhpr [23.325365   0.398961   -8.454705 ]
+   scale [0.750000   0.750000   1.000000 ]
+   ]
+ 
+  prop "tree56_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 255.733002   -310.187988   25.877501 ]
+   nhpr [149.762039   -0.598740   7.439257 ]
+   scale [1.000000   1.000000   1.400000 ]
+   ]
+ 
+  prop "tree57_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 270.894989   -237.240005   17.924101 ]
+   nhpr [16.915989   -8.930559   -8.727661 ]
+   scale [1.250000   1.250002   1.250002 ]
+   ]
+ 
+  prop "tree59_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 232.503998   -225.166000   4.280270 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+ 
+  prop "tree60_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 144.343002   -305.130005   7.096830 ]
+   nhpr [75.000023   0.000000   -0.000000 ]
+   scale [1.100002   1.100002   1.100000 ]
+   ]
+ 
+  prop "tree61_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 92.708199   -279.562012   3.425250 ]
+   nhpr [45.000000   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+ 
+  prop "tree62_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 324.501007   -185.085999   9.916780 ]
+   nhpr [-90.000000   0.000000   -6.546524 ]
+   scale [1.000000   1.000000   1.399998 ]
+   ]
+ 
+  prop "tree63_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 352.828003   -201.067001   10.494700 ]
+   nhpr [0.195348   -1.709923   6.518397 ]
+   scale [1.250003   1.250004   1.250004 ]
+   ]
+ 
+  prop "tree64_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 389.544006   -125.960999   9.716490 ]
+   nhpr [-50.000000   0.000000   -0.000000 ]
+   scale [1.250001   1.250001   1.250000 ]
+   ]
+ 
+  prop "tree66_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 290.791992   -339.334991   19.287201 ]
+   nhpr [-108.561241   -7.168286   8.380493 ]
+   scale [1.000000   1.000000   1.400005 ]
+   ]
+ 
+  prop "tree67_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 286.269012   -410.183014   10.049500 ]
+   nhpr [149.597244   -5.563904   -1.903471 ]
+   scale [1.000000   1.000000   1.400005 ]
+   ]
+ 
+  prop "tree68_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 272.941986   -437.265991   4.310200 ]
+   nhpr [-6.496003   6.122882   2.165083 ]
+   scale [0.750000   0.750000   1.000000 ]
+   ]
+ 
+  prop "tree69_DNARoot" [  
+   code [ tf_tree_m ]
+   pos [ 220.246002   -392.868988   6.575000 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [1.000000   1.000000   1.000000 ]
+   ]
+   
+  prop "tree15_DNARoot" [
+   code [ tf_tree_l ]
+   pos [ -64.604599   -83.133797   45.232700 ]
+   nhpr [-2.152871   0.000000   -0.000000 ]
+   scale [1.282665   1.282665   1.750000 ]
+   ]
+   
+  prop "tree53_DNARoot" [
+   code [ tf_tree_l ]
+   pos [ -104.115997   -127.053001   12.233100 ]
+   nhpr [-43.976086   0.393541   1.973998 ]
+   scale [2.250000   2.250002   2.749997 ]
+   ]
+
+  prop "tree24_DNARoot" [  
+   code [ tf_tree_l ]
+   pos [ 442.454010   -39.225800   9.606790 ]
+   nhpr [-0.000000   0.000000   -0.000000 ]
+   scale [2.000000   2.000000   2.000000 ]
+  ]
+ ] 
+]

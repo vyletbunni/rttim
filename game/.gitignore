@@ -1,0 +1,23 @@
+# Eclipse IDE:
+.project
+.pydevproject
+
+# Mac directory info:
+.DS_Store
+
+# Game-specific files and directories:
+preferences.json
+logs/
+screenshots/
+backups/
+contentpacks/
+toondata/
+doc/
+deployment/
+dependencies/
+importance/
+tools/
+user/
+astron/logs
+.idea
+valuestoremember.txt

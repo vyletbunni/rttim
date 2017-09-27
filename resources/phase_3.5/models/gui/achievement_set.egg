@@ -1,0 +1,216 @@
+<CoordinateSystem> { Y-Up }
+
+<Comment> {
+  "maya2egg2015 -p -bface -keep-uvs -round-uvs -tbnall -a none -cs y-up -uo cm -trans model -o 'Y:/Maya Projects/TTI_Projects/achievement_set.egg' 'Y:/Maya Projects/TTI_Projects/achievement_set_temp.mb'"
+}
+<Texture> achievement_set_01 {
+  "phase_3.5/maps/achievement_set_01.jpg"
+  <Scalar> wrapu { repeat }
+  <Scalar> wrapv { repeat }
+  <Scalar> minfilter { linear_mipmap_linear }
+  <Scalar> magfilter { linear }
+}
+<Group> groundPlane_transform {
+}
+<Group> group1 {
+  <Group> achievement1 {
+    <VertexPool> uv1.verts {
+      <Vertex> 0 {
+        -2 -0.5 0
+        <UV> {
+          0 0.75
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 1 {
+        -2 0.5 0
+        <UV> {
+          0 1
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 2 {
+        2 -0.5 0
+        <UV> {
+          1 0.75
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 3 {
+        2 0.5 0
+        <UV> {
+          1 1
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+    }
+    <Polygon> {
+      <Normal> { 0 0 1 }
+      <TRef> { achievement_set_01 }
+      <BFace> { 1 }
+      <VertexRef> { 0 2 3 1 <Ref> { uv1.verts } }
+    }
+  }
+  <Group> achievement2 {
+    <VertexPool> uv2.verts {
+      <Vertex> 0 {
+        -2 -0.5 0
+        <UV> {
+          0 0.5
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 1 {
+        -2 0.5 0
+        <UV> {
+          0 0.75
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 2 {
+        2 -0.5 0
+        <UV> {
+          1 0.5
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 3 {
+        2 0.5 0
+        <UV> {
+          1 0.75
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+    }
+    <Polygon> {
+      <Normal> { 0 0 1 }
+      <TRef> { achievement_set_01 }
+      <BFace> { 1 }
+      <VertexRef> { 0 2 3 1 <Ref> { uv2.verts } }
+    }
+  }
+  <Group> achievement3 {
+    <VertexPool> uv3.verts {
+      <Vertex> 0 {
+        -2 -0.5 0
+        <UV> {
+          0 0.25
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 1 {
+        -2 0.5 0
+        <UV> {
+          0 0.5
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 2 {
+        2 -0.5 0
+        <UV> {
+          1 0.25
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 3 {
+        2 0.5 0
+        <UV> {
+          1 0.5
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+    }
+    <Polygon> {
+      <Normal> { 0 0 1 }
+      <TRef> { achievement_set_01 }
+      <BFace> { 1 }
+      <VertexRef> { 0 2 3 1 <Ref> { uv3.verts } }
+    }
+  }
+  <Group> achievement4 {
+    <VertexPool> uv4.verts {
+      <Vertex> 0 {
+        -2 -0.5 0
+        <UV> {
+          0 -2.98023e-008
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 1 {
+        -2 0.5 0
+        <UV> {
+          0 0.25
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 2 {
+        2 -0.5 0
+        <UV> {
+          1 -2.98023e-008
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+      <Vertex> 3 {
+        2 0.5 0
+        <UV> {
+          1 0.25
+          <Tangent> { 1 0 0 }
+          <Binormal> { 0 1 0 }
+        }
+        <Normal> { 0 0 1 }
+        <RGBA> { 1 1 1 1 }
+      }
+    }
+    <Polygon> {
+      <Normal> { 0 0 1 }
+      <TRef> { achievement_set_01 }
+      <BFace> { 1 }
+      <VertexRef> { 0 2 3 1 <Ref> { uv4.verts } }
+    }
+  }
+}

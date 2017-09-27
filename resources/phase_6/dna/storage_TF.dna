@@ -1,0 +1,43 @@
+hood_model "phase_6/models/events/ttr_m_ww_grounds" [
+	store_node [ "prop" "tf_grounds_1" ""  ]
+	]
+
+hood_model "phase_6/models/events/ttr_m_ww_tree_s" [
+	store_node [ "prop" "tf_tree_s" ""  ]
+	]
+	
+hood_model "phase_6/models/events/ttr_m_ww_tree_m" [
+	store_node [ "prop" "tf_tree_m" ""  ]
+	]
+	
+hood_model "phase_6/models/events/ttr_m_ww_tree_l" [
+	store_node [ "prop" "tf_tree_l" ""  ]
+	]
+	
+hood_model "phase_6/models/golf/picnic_table" [
+	store_node [ "prop" "picnic_table" ""  ]
+	]
+	
+hood_model "phase_6/models/golf/game_table" [
+	store_node [ "prop" "prop_game_table" ""  ]
+	]
+	
+hood_model "phase_6/models/golf/outdoor_zone_entrance" [
+	store_node [ "prop" "prop_outdoor_zone_entrance" ""  ]
+	]
+	
+hood_model "phase_6/models/props/signs_DD" [
+	store_node [ "prop" "DD_sign2" ""  ]
+	]
+	
+hood_model "phase_6/models/events/ttr_m_tf_tower" [
+	store_node [ "prop" "tf_tower" ""  ]
+	]
+	
+hood_model "phase_6/models/events/ttr_m_tf_ducktank" [
+	store_node [ "prop" "tf_ducktank" ""  ]
+	]
+	
+hood_model "phase_6/models/events/ttr_m_tf_booth" [
+	store_node [ "prop" "tf_booth" ""  ]
+	]
