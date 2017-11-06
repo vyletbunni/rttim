@@ -12,3 +12,5 @@ If you can't get to the client website, here's some download links...
 TTI's Panda3D (USE THIS SPECIFIC ONE): https://drive.google.com/open?id=0ByhEdrimrfA-Q216NUpuNlNlZlk
 
 Discord Server: https://discord.gg/FqkE9WV
+
+**Before you submit any issues**, check to see if it's already covered in the support booth: https://github.com/rynogg/rttim/wiki/Support-Booth
