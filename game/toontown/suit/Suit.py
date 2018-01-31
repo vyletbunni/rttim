@@ -728,7 +728,7 @@ class Suit(Avatar.Avatar):
         elif dept == 'm':
             tieTex = loader.loadTexture('phase_5/maps/cog_robot_tie_money.jpg')
         elif dept == 'z':
-            tieTex = loader.loadTexture('phase_5/maps/cog_robot_tie_boss.jpg')#CRAZYBOT-TEMP
+            tieTex = loader.loadTexture('phase_5/maps/cog_robot_tie_crazy.png')#CRAZYBOT-TEMP
         tieTex.setMinfilter(Texture.FTLinearMipmapLinear)
         tieTex.setMagfilter(Texture.FTLinear)
         tie.setTexture(tieTex, 1)
