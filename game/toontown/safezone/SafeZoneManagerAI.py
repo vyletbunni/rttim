@@ -2,7 +2,7 @@ from direct.directnotify.DirectNotifyGlobal import *
 from direct.distributed import DistributedObjectAI
 
 
-HealFrequency = 10.0  # The time in seconds between each Toon-up pulse.
+HealFrequency = 5.0  # The time in seconds between each Toon-up pulse.
 
 
 class SafeZoneManagerAI(DistributedObjectAI.DistributedObjectAI):
