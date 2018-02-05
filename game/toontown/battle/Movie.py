@@ -329,6 +329,7 @@ class Movie(DirectObject.DirectObject):
          0], [0,
          0,
          0,
+         0,
          0], noSkip=True))
         self.track += self.rewardPanel.getTrackIntervalList(base.localAvatar, THROW_TRACK, 0, 1, 0)
         self.track.append(Func(self.tutRewardDialog_1.show))

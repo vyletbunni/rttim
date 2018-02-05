@@ -40,3 +40,6 @@ want-yin-yang #f
 show-population #t
 force-skip-tutorial #f
 want-instant-parties #t
+
+whitelist-chat-enabled #f
+want-whitelist #f
