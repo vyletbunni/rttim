@@ -720,9 +720,6 @@ class RewardPanel(DirectFrame):
                     endTracks[trackIndex] = 1
                     trackEnded = 1
         for dept in xrange(len(SuitDNA.suitDepts)):
-            if not meritList[dept]:
-                print ":RewardPanel: Crazybot building hack."
-                meritList.append(0)
             if meritList[dept]:
                 track += self.getMeritIntervalList(toon, dept, origMeritList[dept], meritList[dept])
 
