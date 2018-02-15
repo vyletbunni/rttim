@@ -4916,13 +4916,20 @@ FishingRodNameDict = {0: 'Twig',
  2: 'Hardwood',
  3: 'Steel',
  4: 'Gold'}
-FishTrophyNameDict = {0: 'Guppy',
- 1: 'Minnow',
- 2: 'Fish',
- 3: 'Flying Fish',
- 4: 'Shark',
- 5: 'Swordfish',
- 6: 'Killer Whale'}
+FishTrophyNameDict = {0: 'Red Cup',
+ 1: 'Red Bowl',
+ 2: 'White Cup',
+ 3: 'White Bowl',
+ 4: 'Bronze Cup',
+ 5: 'Bronze Bowl',
+ 6: 'Silver Cup',
+ 7: 'Silver Bowl',
+ 8: 'Gold Cup',
+ 9: 'Gold Bowl',
+ 10: 'Diamond Cup',
+ 11: 'Diamond Bowl',
+ 12: 'Legendary Cup',
+ 13: 'Legendary Bowl'}
 GardenPageTitle = 'Gardening'
 GardenPageTitleBasket = 'Flower Basket'
 GardenPageTitleCollection = 'Flower Album'
