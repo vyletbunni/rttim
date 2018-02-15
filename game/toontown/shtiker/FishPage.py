@@ -230,56 +230,102 @@ class FishingTrophy(DirectFrame):
             self.nameLabel.show()
             self.column.setScale(1.3229, 1.26468, 1.11878)
             self.top.setPos(0, 0, -1)
-            self.__bronze()
+            self.__red()
         elif level == 1:
-            self.trophy.show()
-            self.bowl.hide()
+            self.trophy.hide()
+            self.bowl.show()
+            self.bowlTop.setScale(0.65)
             self.nameLabel.show()
-            self.column.setScale(1.3229, 1.26468, 1.61878)
-            self.top.setPos(0, 0, -0.5)
-            self.__bronze()
+            self.__red()
         elif level == 2:
             self.trophy.show()
             self.bowl.hide()
             self.nameLabel.show()
             self.column.setScale(1.3229, 1.26468, 2.11878)
             self.top.setPos(0, 0, 0)
-            self.__silver()
+            self.__white()
         elif level == 3:
-            self.trophy.show()
-            self.bowl.hide()
+            self.trophy.hide()
+            self.bowl.show()
             self.nameLabel.show()
-            self.column.setScale(1.3229, 1.26468, 2.61878)
-            self.top.setPos(0, 0, 0.5)
-            self.__silver()
+            self.bowlTop.setScale(0.8)
+            self.__white()
         elif level == 4:
             self.trophy.show()
             self.bowl.hide()
             self.nameLabel.show()
             self.column.setScale(1.3229, 1.26468, 3.11878)
             self.top.setPos(0, 0, 1)
-            self.__gold()
+            self.__bronze()
         elif level == 5:
+            self.trophy.hide()
+            self.bowl.show()
+            self.bowlTop.setScale(1.5)
+            self.nameLabel.show()
+            self.__bronze()
+        elif level == 6:
+            self.trophy.show()
+            self.bowl.hide()
+            self.nameLabel.show()
+            self.column.setScale(1.3229, 1.26468, 3.11878)
+            self.top.setPos(0, 0, 1)
+            self.__silver()
+        elif level == 7:
             self.trophy.hide()
             self.bowl.show()
             self.bowlTop.setScale(1.75)
             self.nameLabel.show()
-            self.__bronze()
-        elif level == 6:
+            self.__silver()
+        elif level == 8:
+            self.trophy.show()
+            self.bowl.hide()
+            self.nameLabel.show()
+            self.column.setScale(1.3229, 1.26468, 3.11878)
+            self.top.setPos(0, 0, 1)
+            self.__gold()
+        elif level == 9:
+            self.trophy.hide()
+            self.bowl.show()
+            self.bowlTop.setScale(1.8)
+            self.nameLabel.show()
+            self.__gold()
+        elif level == 10:
+            self.trophy.show()
+            self.bowl.hide()
+            self.nameLabel.show()
+            self.column.setScale(1.3229, 1.26468, 3.11878)
+            self.top.setPos(0, 0, 1)
+            self.__diamond()
+        elif level == 11:
             self.trophy.hide()
             self.bowl.show()
             self.bowlTop.setScale(2.0)
             self.nameLabel.show()
-            self.__silver()
-        elif level >= 7:
+            self.__diamond()
+        elif level == 12:
+            self.trophy.show()
+            self.bowl.hide()
+            self.nameLabel.show()
+            self.column.setScale(1.3229, 1.26468, 3.11878)
+            self.top.setPos(0, 0, 1)
+            self.__legendary()
+        elif level >= 13:
             self.trophy.hide()
             self.bowl.show()
-            self.bowlTop.setScale(2.25)
+            self.bowlTop.setScale(2.5)
             self.nameLabel.show()
-            self.__gold()
+            self.__legendary()
 
+    def __red(self):
+        self.top.setColorScale(1.0, 0.0, 0.0, 1)
+        self.bowlTop.setColorScale(1.0, 0.0, 0.0, 1)
+        
+    def __white(self):
+        self.top.setColorScale(1.0, 1.0, 1.0, 1)
+        self.bowlTop.setColorScale(1.0, 1.0, 1.0, 1)
+    
     def __bronze(self):
-        self.top.setColorScale(0.9, 0.6, 0.33, 1)
+        self.top.setColorScale(1.0, 0.6, 0.33, 1)
         self.bowlTop.setColorScale(0.9, 0.6, 0.33, 1)
 
     def __silver(self):
@@ -289,6 +335,14 @@ class FishingTrophy(DirectFrame):
     def __gold(self):
         self.top.setColorScale(1, 0.95, 0.1, 1)
         self.bowlTop.setColorScale(1, 0.95, 0.1, 1)
+        
+    def __diamond(self):
+        self.top.setColorScale(0.0, 1.0, 1.0, 1)
+        self.bowlTop.setColorScale(0.0, 1.0, 1.0, 1)
+        
+    def __legendary(self):
+        self.top.setColorScale(1.0, 0.0, 0.5, 1)
+        self.bowlTop.setColorScale(1.0, 0.0, 0.5, 1)
 
     def destroy(self):
         self.trophy.removeNode()
