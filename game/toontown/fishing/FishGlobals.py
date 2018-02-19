@@ -328,10 +328,10 @@ TrophyDict = {0: (TTLocalizer.FishTrophyNameDict[0],),
  7: (TTLocalizer.FishTrophyNameDict[7],),
  8: (TTLocalizer.FishTrophyNameDict[8],),
  9: (TTLocalizer.FishTrophyNameDict[9],),
- 9: (TTLocalizer.FishTrophyNameDict[10],),
- 9: (TTLocalizer.FishTrophyNameDict[11],),
- 9: (TTLocalizer.FishTrophyNameDict[12],),
- 9: (TTLocalizer.FishTrophyNameDict[13],)}
+ 10: (TTLocalizer.FishTrophyNameDict[10],),
+ 11: (TTLocalizer.FishTrophyNameDict[11],),
+ 12: (TTLocalizer.FishTrophyNameDict[12],),
+ 13: (TTLocalizer.FishTrophyNameDict[13],)}
 WEIGHT_MIN_INDEX = 0
 WEIGHT_MAX_INDEX = 1
 RARITY_INDEX = 2
