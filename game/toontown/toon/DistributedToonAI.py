@@ -1035,6 +1035,15 @@ class DistributedToonAI(DistributedPlayerAI.DistributedPlayerAI, DistributedSmoo
         if hp <= 0:
             messenger.send(self.getGoneSadMessage())
 
+    def reachedCountdown(self, val):
+        self.d_showCountdown(val)
+
+    def d_showCountdown(self, val):
+        self.sendUpdate("showCountdown", [val])
+
+    def drown(self):
+        self.b_setHp(-5)
+
     def b_setTutorialAck(self, tutorialAck):
         self.d_setTutorialAck(tutorialAck)
         self.setTutorialAck(tutorialAck)

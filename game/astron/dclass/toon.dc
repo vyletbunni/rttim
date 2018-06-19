@@ -641,6 +641,9 @@ dclass DistributedToon : DistributedPlayer {
   setAnimalSound(uint8 index) ram broadcast ownrecv;
   setBuffs(uint32[] = []) required ownrecv db;
   doGreen(string, string, uint32) broadcast;
+  drown() clsend airecv;
+  reachedCountdown(int8) clsend airecv;
+  showCountdown(int8) broadcast;
 };
 
 dclass DistributedCCharBase : DistributedObject {

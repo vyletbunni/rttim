@@ -79,6 +79,8 @@ class Walk(StateData.StateData):
         self.swimSoundPlaying = 0
         base.localAvatar.b_setAnimState('swim', base.localAvatar.animMultiplier)
         base.localAvatar.startSleepSwimTest()
+        if not base.localAvatar.drownSeq.isPlaying():
+            base.localAvatar.drownSeq.start(startT=0)
         taskMgr.add(self.__swim, 'localToonSwimming')
 
     def exitSwimming(self):
@@ -87,6 +89,7 @@ class Walk(StateData.StateData):
         del self.swimSound
         self.swimSoundPlaying = 0
         base.localAvatar.stopSleepSwimTest()
+
 
     def __swim(self, task):
         speed = base.mouseInterfaceNode.getSpeed()

@@ -17,6 +17,7 @@ from otp.avatar import Emote
 from otp.avatar.Avatar import teleportNotify
 from otp.otpbase import OTPGlobals
 from otp.otpbase import OTPLocalizer
+from toontown.battle import BattleParticles
 from toontown.battle import SuitBattleGlobals
 from toontown.chat.ChatGlobals import *
 from toontown.distributed import DelayDelete
@@ -2107,6 +2108,39 @@ class Toon(Avatar.Avatar, ToonHead):
         else:
             trackName = 'died'
         ival = Sequence(Func(Emote.globalEmote.disableBody, self), Func(self.sadEyes), Func(self.blinkEyes), Track((0, ActorInterval(self, 'lose')), (2, SoundInterval(sound, node=self)), (5.333, self.scaleInterval(1.5, VBase3(0.01, 0.01, 0.01), blendType='easeInOut'))), Func(self.detachNode), Func(self.setScale, 1, 1, 1), Func(self.normalEyes), Func(self.blinkEyes), Func(Emote.globalEmote.releaseBody, self), name=trackName, autoFinish=autoFinishTrack)
+        if self.hp == -5:
+            self.stopLookAroundNow()
+            BattleParticles.loadParticles()
+            buble = BattleParticles.createParticleEffect("buble")
+            print self.getHeadParts()[0].getPos(render)
+            buble.setPos(self.getHeadParts()[0].getPos(render))
+            buble.setZ(buble.getZ() + 0.5)
+            buble.reparentTo(render)
+            buble.setDepthWrite(False)
+            ival = Sequence(
+                Func(Emote.globalEmote.disableBody, self),
+                Func(self.stopBlink),
+                Func(self.getHeadParts()[0].setP, 75),
+                Func(self.showSadMuzzle),
+                Func(self.stop),
+                Func(base.playSfx, loader.loadSfx('phase_4/audio/sfx/drown.ogg'), node=self),
+                Parallel(
+                    LerpColorScaleInterval(self.getHeadParts()[0], duration=2, colorScale=(0.5, 0.5, 1, 1)),
+                    LerpPosHprInterval(self.getGeomNode(), duration=4, pos=(0, 0, 4), hpr=(0, 50, 0), other=self),
+                    Sequence(Wait(3.5), self.scaleInterval(1.5, VBase3(0.01, 0.01, 0.01), blendType='easeInOut'))
+                ),
+                Func(self.detachNode),
+                Func(self.setScale, 1, 1, 1),
+                Func(self.getGeomNode().setPosHpr, self, 0, 0, 0, 0, 0, 0),
+                LerpColorScaleInterval(self.getHeadParts()[0], duration=0, colorScale=(1, 1, 1, 1)),
+                Func(self.startBlink),
+                Func(self.blinkEyes),
+                Func(self.startLookAround),
+                Func(self.getHeadParts()[0].setP, 0),
+                Func(self.hideSadMuzzle),
+                Func(Emote.globalEmote.releaseBody, self),
+                name=trackName, autoFinish=autoFinishTrack
+            )
         return ival
 
     def enterDied(self, animMultiplier = 1, ts = 0, callback = None, extraArgs = []):

@@ -192,6 +192,61 @@ class DistributedToon(DistributedPlayer.DistributedPlayer, Toon.Toon, Distribute
         self.promotionStatus = [0, 0, 0, 0, 0]
         self.buffs = []
         self.flowerCooldown = 0
+        self.countdownSeq = Sequence()
+        self.drownTheme = base.loadMusic('phase_4/audio/bgm/DROWNING.ogg')
+        self.drownSeq = Sequence(Wait(5), Func(base.playSfx, base.loadSfx('phase_4/audio/sfx/drown_warning.ogg')),
+                                 Wait(5), Func(base.playSfx, base.loadSfx('phase_4/audio/sfx/drown_warning.ogg')),
+                                 Wait(5), Func(base.playSfx, base.loadSfx('phase_4/audio/sfx/drown_warning.ogg')),
+                                 Wait(5), Func(base.playSfx, base.loadSfx('phase_4/audio/sfx/drown_warning.ogg')),
+                                 Wait(5), Func(self.stopHoodMusic), Func(self.d_reachedCountdown, 0),
+                                 Func(base.playMusic, self.drownTheme),
+                                 Parallel(
+                                     Wait(12)
+                                 ),
+                                 Func(self.d_drown))
+
+    def d_reachedCountdown(self, val):
+        self.sendUpdate("reachedCountdown", [val])
+
+    def showCountdown(self, val):
+        if val == 0:
+            countdownText = TextNode("countdown")
+            countdownText.setFont(loader.loadFont(TTLocalizer.SignFont))
+            countdownText.setTextColor(1, 1, 0, 1)
+            countdownText.setAlign(TextNode.ACenter)
+            countdown = NodePath("actualcountdown")
+            countdown.setBillboardPointEye(0)
+            countdown.attachNewNode(countdownText)
+            countdown.setZ(self.getHeight() + 1)
+            countdown.setScale(0)
+            countdown.reparentTo(self)
+            flashSeq = Sequence(Func(countdownText.setTextColor, 1, 1, 0, 1), Wait(0.5),
+                                Func(countdownText.setTextColor, 1, 0, 0, 1), Wait(0.5))
+            flashSeq.loop()
+            self.countdownSeq = Sequence(Func(countdownText.setText, "5"),
+                                         Parallel(
+                                             LerpScaleInterval(countdown, duration=0.5, scale=1, blendType="easeInOut"),
+                                             Wait(2),
+                                         ),
+                                         Func(flashSeq.setPlayRate, 2), Func(countdownText.setText, "4"), Wait(2),
+                                         Func(flashSeq.setPlayRate, 3), Func(countdownText.setText, "3"), Wait(2),
+                                         Func(flashSeq.setPlayRate, 4), Func(countdownText.setText, "2"), Wait(2),
+                                         Func(flashSeq.setPlayRate, 5), Func(countdownText.setText, "1"), Wait(2),
+                                         Func(flashSeq.setPlayRate, 6), Func(countdownText.setText, "0"), Wait(2),
+                                         Func(flashSeq.finish), Func(countdown.removeNode), Func(self.showCountdown, 1))
+            self.countdownSeq.start()
+        elif val == 1:
+            if self.countdownSeq.isPlaying():
+                self.countdownSeq.finish()
+            self.countdownSeq = Sequence()
+
+    def d_drown(self):
+        self.sendUpdate("drown")
+
+    def stopHoodMusic(self):
+        if self.isLocal():
+            if hasattr(base.cr.playGame.hood.loader, "music"):
+                base.cr.playGame.hood.loader.music.stop()
 
     def disable(self):
         for soundSequence in self.soundSequenceList:
@@ -1373,6 +1428,18 @@ class DistributedToon(DistributedPlayer.DistributedPlayer, Toon.Toon, Distribute
         self.smoother.computeAndApplySmoothPosHpr(self, self)
         self.setSpeed(self.smoother.getSmoothForwardVelocity(), self.smoother.getSmoothRotationalVelocity())
         return Task.cont
+
+    def setSpeed(self, forwardSpeed, rotateSpeed):
+        Toon.Toon.setSpeed(self, forwardSpeed, rotateSpeed)
+        showWake, wakeWaterHeight = ZoneUtil.getWakeInfo()
+        if (self.getZ(render) >= (wakeWaterHeight - self.getHeight())) and self.drownSeq.isPlaying():
+            print "e"
+            self.d_reachedCountdown(1)
+            self.drownSeq.pause()
+            self.drownTheme.stop()
+            if hasattr(base.cr.playGame.hood.loader, "music"):
+                if base.cr.playGame.hood.loader.music.status() == AudioSound.READY and base.localAvatar.getHp() > 0:
+                    base.playMusic(base.cr.playGame.hood.loader.music, looping=1, interrupt=0)
 
     def d_setParent(self, parentToken):
         DistributedSmoothNode.DistributedSmoothNode.d_setParent(self, parentToken)

@@ -107,6 +107,8 @@ def createParticleEffect(name = None, file = None, numParticles = None, color = 
         return loadParticleFile('splashlines.ptf')
     elif name == 'Withdrawal':
         return loadParticleFile('withdrawal.ptf')
+    elif name == "buble":
+        return loadParticleFile('sex.ptf')
     else:
         notify.warning('createParticleEffect() - no name: %s' % name)
     return None
