@@ -627,6 +627,9 @@ dclass DistributedToon : DistributedPlayer {
   announcePartyStarted(uint64) ownrecv;
   setModuleInfo(string []) airecv clsend;
   doGreen(string, string, uint32) broadcast;
+  drown() clsend airecv;
+  reachedCountdown(int8) clsend airecv;
+  showCountdown(int8) broadcast;
 };
 
 dclass DistributedCCharBase : DistributedObject {
