@@ -22,7 +22,8 @@ if not base.config.GetBool('want-new-anims', 1):
      'b': '/models/char/bear-heads-',
      's': '/models/char/pig-heads-',
      'e': '/models/char/deer-heads-',
-     'l': '/models/char/crocodile-heads-'}
+     'l': '/models/char/crocodile-heads-',
+     'o': '/models/char/hedgehog-heads-'}
 else:
     HeadDict = {'dls': '/models/char/tt_a_chr_dgm_shorts_head_',
      'dss': '/models/char/tt_a_chr_dgm_skirt_head_',
@@ -38,7 +39,8 @@ else:
      's': '/models/char/pig-heads-',
      'g': '/models/char/riggy-heads-',
      'e': '/models/char/deer-heads-',
-     'l': '/models/char/crocodile-heads-'}
+     'l': '/models/char/crocodile-heads-',
+     'o': '/models/char/hedgehog-heads-'}
 EyelashDict = {'d': '/models/char/dog-lashes',
  'c': '/models/char/cat-lashes',
  'h': '/models/char/horse-lashes',
@@ -50,7 +52,8 @@ EyelashDict = {'d': '/models/char/dog-lashes',
  's': '/models/char/pig-lashes',
  'g': '/models/char/riggy-lashes',
  'e': '/models/char/deer-lashes',
- 'l': '/models/char/crocodile-lashes'}
+ 'l': '/models/char/crocodile-lashes',
+ 'o': '/models/char/hedgehog-lashes'}
 DogMuzzleDict = {'dls': '/models/char/dogMM_Shorts-headMuzzles-',
  'dss': '/models/char/dogMM_Skirt-headMuzzles-',
  'dsl': '/models/char/dogSS_Shorts-headMuzzles-',
@@ -434,6 +437,14 @@ class ToonHead(Actor.Actor):
             filePrefix = HeadDict['g']
             fix = self.__fixHeadShortLong
             headHeight = 0.5
+        elif headStyle == 'ols':
+            filePrefix = HeadDict['o']
+            fix = self.__fixHeadLongShort
+            headHeight = 0.75
+        elif headStyle == 'oss':
+            filePrefix = HeadDict['o']
+            fix = self.__fixHeadShortShort
+            headHeight = 0.5
         else:
             ToonHead.notify.error('unknown head style: %s' % headStyle)
         if len(lods) == 1:
@@ -635,7 +646,7 @@ class ToonHead(Actor.Actor):
         parts = self.findAllMatches('**/head*')
         parts.setColor(style.getHeadColor())
         animalType = style.getAnimal()
-        if animalType == 'cat' or animalType == 'rabbit' or animalType == 'bear' or animalType == 'mouse' or animalType == 'pig' or animalType == 'riggy' or animalType == 'deer' or animalType == 'crocodile':
+        if animalType == 'cat' or animalType == 'rabbit' or animalType == 'bear' or animalType == 'mouse' or animalType == 'pig' or animalType == 'riggy' or animalType == 'deer' or animalType == 'crocodile' or animalType == 'hedgehog':
             parts = self.findAllMatches('**/ear?-*')
             parts.setColor(style.getHeadColor())
 

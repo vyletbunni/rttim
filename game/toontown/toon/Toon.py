@@ -53,6 +53,7 @@ SuitDialogArray = []
 SkelSuitDialogArray = []
 DeerDialogueArray = []
 CrocodileDialogueArray = []
+HedgehogDialogueArray = []
 MickeyDialogueArray = []
 MinnieDialogueArray = []
 GoofyDialogueArray = []
@@ -409,6 +410,11 @@ def loadDialog():
     global CrocodileDialogueArray
     for file in crocodileDialogueFiles:
         CrocodileDialogueArray.append(base.loadSfx(loadPath + file + '.ogg'))
+        
+    hedgehogDialogueFiles = ('AV_hedgehog_short', 'AV_hedgehog_med', 'AV_hedgehog_long', 'AV_hedgehog_question', 'AV_hedgehog_exclaim', 'AV_hedgehog_howl')
+    global HedgehogDialogueArray
+    for file in hedgehogDialogueFiles:
+        HedgehogDialogueArray.append(base.loadSfx(loadPath + file + '.ogg'))
     
     global SuitDialogArray
     if len(SuitDialogArray) > 0:
@@ -500,6 +506,7 @@ def unloadDialog():
     global PigDialogueArray
     global DeerDialogueArray
     global CrocodileDialogueArray
+    global HedgehogDialogueArray
     global BearDialogueArray
     global DuckDialogueArray
     global RabbitDialogueArray
@@ -529,6 +536,7 @@ def unloadDialog():
     SuitDialogArray = []
     DeerDialogueArray = []
     CrocodileDialogueArray = []
+    HedgehogDialogueArray = []
     MickeyDialogueArray = []
     MinnieDialogueArray = []
     GoofyDialogueArray = []
@@ -1373,6 +1381,8 @@ class Toon(Avatar.Avatar, ToonHead):
             dialogueArray = DeerDialogueArray
         elif animalType == 'crocodile':
             dialogueArray = CrocodileDialogueArray
+        elif animalType == 'hedgehog':
+            dialogueArray = HedgehogDialogueArray
         else:
             dialogueArray = None
         return dialogueArray

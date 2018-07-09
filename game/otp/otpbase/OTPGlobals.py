@@ -268,7 +268,8 @@ toonBodyScales = {'mouse': 0.6,
  'pig': 0.77,
  'riggy': 0.74,
  'deer': 0.8,
- 'crocodile': 0.75}
+ 'crocodile': 0.75,
+ 'hedgehog': 0.66}
 toonHeadScales = {'mouse': Point3(1.0),
  'cat': Point3(1.0),
  'duck': Point3(1.0),
@@ -280,7 +281,8 @@ toonHeadScales = {'mouse': Point3(1.0),
  'pig': Point3(1.0),
  'riggy': Point3(1.0),
  'deer': Point3(1.0),
- 'crocodile': Point3(1.0)}
+ 'crocodile': Point3(1.0),
+ 'hedgehog': Point3(1.25)}
 legHeightDict = {'s': 1.5,
  'm': 2.0,
  'l': 2.75}
@@ -341,7 +343,9 @@ headHeightDict = {'dls': 0.75,
  'lls': 0.75,
  'lss': 0.5,
  'lsl': 0.5,
- 'lll': 0.75}
+ 'lll': 0.75,
+ 'ols': 0.75,
+ 'oss': 0.5}
 RandomButton = 'Randomize'
 TypeANameButton = 'Type Name'
 PickANameButton = 'Pick-A-Name'
