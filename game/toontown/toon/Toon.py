@@ -417,9 +417,9 @@ def loadDialog():
     for file in hedgehogDialogueFiles:
         HedgehogDialogueArray.append(base.loadSfx(loadPath + file + '.ogg'))
         
-    FoxDialogueFiles = ('AV_dog_short', 'AV_dog_med', 'AV_dog_long', 'AV_dog_question', 'AV_dog_exclaim', 'AV_dog_howl')
+    foxDialogueFiles = ('AV_dog_short', 'AV_dog_med', 'AV_dog_long', 'AV_dog_question', 'AV_dog_exclaim', 'AV_dog_howl')
     global FoxDialogueArray
-    for file in FoxDialogueFiles:
+    for file in foxDialogueFiles:
         FoxDialogueArray.append(base.loadSfx(loadPath + file + '.ogg'))
     
     global SuitDialogArray

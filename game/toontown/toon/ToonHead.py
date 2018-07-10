@@ -1000,6 +1000,11 @@ class ToonHead(Actor.Actor):
                     muzzleParts.getPath(partNum).removeNode()
                 else:
                     muzzleParts.getPath(partNum).hide()
+        if animalType == 'fox':
+            if copy:
+                self.find('**/nose-short').removeNode()
+            else:
+                self.find('**/nose-short').hide()
 
         else:
             muzzleParts = searchRoot.findAllMatches('**/muzzle-long*')

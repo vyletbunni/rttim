@@ -60,6 +60,8 @@ class LaffMeter(DirectFrame):
                 headModel = gui.find('**/crocodilehead') #Placeholder
             elif hType == 'hedgehog':
                 headModel = gui.find('**/cathead')
+            elif hType == 'fox':
+                headModel = gui.find('**/cathead')
             else:
                 raise StandardError('unknown toon species: ', hType)
             self.color = self.style.getHeadColor()
